@@ -1,7 +1,8 @@
-import json
+import requests
 
-with open("champion-summary.json") as file:
-    data = json.load(file)
+response = requests.get(
+    "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json")
+data = response.json()
 
 champions = [i["name"].lower() for i in data]
 roles = [i["roles"] for i in data]

@@ -5,11 +5,8 @@ This tool helps the user analyze, find, and select ideal League of Legends team 
 1. Install Python at https://www.python.org/downloads/.
 2. Download repository.
 3. Open Terminal in repository folder.
-4. Enter ```python main.py```.
-
-This program is updated biweekly for patch releases.
-The .json file to update the program is found at https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/.
-The file name is ```champion-summary.json```.
+4. Enter ```pip install requests```.
+5. Enter ```python main.py```.
 
 # Usage
 This program has three functions, *selector*, *analyzer*, and *finder*.
